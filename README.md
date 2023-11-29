@@ -4,6 +4,6 @@
 pip install -r requirements.txt
 ```
 ## Run streamlit app
-'''sh
+```sh
 streamlit run Data_Analyst.py
-'''
+```
