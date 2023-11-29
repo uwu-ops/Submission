@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-all_dataset = pd.read_csv("all_dataset.csv")
+all_dataset = pd.read_csv("../dashboard/all_dataset.csv")
 
 
 st.header('Analisis Data E-Commerce Public Dataset')
