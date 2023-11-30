@@ -10,12 +10,6 @@ st.header('Analisis Data E-Commerce Public Dataset')
 st.subheader(
     """Score Review per-Kategori Barang"""
 )
-st.table(
-    all_dataset.groupby(by=["product_category_name_english"]).agg(
-    {
-        "review_score": "mean"
-    }).sort_values("review_score")
-)
 data = all_dataset.groupby(by=["product_category_name_english"]).agg(
     {
         "review_score": "mean"
@@ -56,13 +50,6 @@ st.pyplot(fig)
 
 st.subheader(
     """Kategori Produk yang Sering Dibeli"""
-)
-
-st.table(
-     all_dataset.groupby(by=["product_category_name_english"]).agg(
-    {
-        "payment_sequential" : "sum"
-    }).sort_values("payment_sequential")
 )
 
 data = all_dataset.groupby(by=["product_category_name_english"]).agg(
